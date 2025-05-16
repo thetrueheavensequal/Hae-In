@@ -1,0 +1,20 @@
+{% extends "./base.html" %}
+
+{% load static %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/css/home.css' %}">
+
+<div class="hero-section">
+    <img src="{% static '/images/home-cover.jpg' %}" width="100%" class="hero-image">
+    <div class="overlay-text">
+        <h1>Medical & Health Care <span class="highlight">Services</span></h1>
+        <p>Your health is our top priority. Schedule an appointment with us today.</p>
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="document.location='apply'">Appointment</button>
+            <button class="btn btn-dark" onclick="document.location='contact'">Contact Us</button>
+    </div>
+</div>
+
+{% endblock %}

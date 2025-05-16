@@ -1,0 +1,15 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+.depthead {
+    background: #282d31;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.deptdesc {
+    padding: 40px 20px;
+    background-image: url(../images/presm.png);
+}

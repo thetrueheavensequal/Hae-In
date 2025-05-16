@@ -1,0 +1,27 @@
+{% extends "./base.html" %}
+
+{% load static %}
+{% block title %} Doctors {% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/css/doc.css' %}">
+
+<div class="container py-5">
+    <div class="row g-4 justify-content-center">
+      {% for d in doctors %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="{{d.doc_image.url}}" alt="{{ d.doc_name }}" class="card-img-top" style="width:100%">
+            <div class="card-body">
+              <h5 class="card-title">{{ d.doc_name }}</h5>
+              <p class="card-text fw-bold">{{ d.doc_spec }} <br> [{{ d.dep_name }}]</p>
+              <a href="#" class="btn btn-primary">Book an Appointment</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+
+{% endblock %}

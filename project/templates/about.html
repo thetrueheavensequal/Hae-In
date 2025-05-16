@@ -1,0 +1,27 @@
+{% extends "./base.html" %}
+
+{% load static %}
+{% block title %} About {% endblock %}
+{% block content %}
+
+<div class="container py-5" id="about">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+            <img src="{% static 'images/hos_bed.png' %}" class="img-fluid rounded shadow" alt="Hospital Image">
+        </div>
+        <div class="col-md-6">
+            <h2 class="fw-bold mb-3">About Us</h2>
+            <p class="lead">
+                Welcome to <strong>Hae-In Hospital</strong>, where compassionate care meets cutting-edge medical excellence. 
+                Our mission is to provide holistic and personalized healthcare through a team of skilled professionals, 
+                state-of-the-art technology, and a commitment to patient well-being.
+            </p>
+            <p>
+                With a legacy of trust and service, we stand as a pillar of hope, healing, and health in the community we proudly serve.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
